@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  background-color: #5c5470;
+  color: #faf0e6;
+
+  overflow-x: hidden;
+}
+header {
+  margin-top: 2vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  padding: 0 9%;
+  background-color: #5c5470;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border: 2px solid #352f44;
+  border-radius: 300px;
+  height: 10vh;
+  margin-left: 10vw;
+}
+
+.nav a {
+  font-size: 3vh;
+}
+
+.logo {
+  font-size: 3vh;
+  /* color: #b74b4b; */
+  color: #faf0e6;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav a {
+  font-size: 2.5rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: #b9b4c7;
+  border-bottom: 3px solid #352f44;
+}
+
+@media (max-width: 995px) {
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 40%;
+    border-left: 3px solid #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+    padding: 1rem solid;
+    /* background-color: #161616; */
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.container > div {
+  width: 100%;
+  height: 50vh;
+
+  margin-top: 25vh;
+}
+
+.heading-cont {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.heading-cont > * {
+  text-align: right;
+  display: grid;
+
+  margin-right: 5vw;
+}
+
+.heading-cont h1 {
+  font-size: 10vh;
+  /* justify-self: center; */
+  align-self: center;
+}
+
+.heading-cont h3 {
+  font-size: 3vh;
+  align-self: flex-end;
+}
+
+.heading-cont h4 {
+  font-size: 3vh;
+  text-align: right;
+}
+
+.oswald {
+  font-family: "Oswald", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.buttonDiv {
+  display: grid;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.buttonDiv button {
+  min-height: 10vh;
+  width: 20vw;
+
+  margin-left: 5vw;
+
+  border: #352f44 solid 1px;
+  border-radius: 5px;
+  background: transparent;
+
+  color: #faf0e6;
+  font-size: 3vh;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonDiv button:hover {
+  background-color: #b9b4c7;
+  color: black;
+}
